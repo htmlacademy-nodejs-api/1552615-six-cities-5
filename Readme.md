@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов»
 
 * Студент: [Ильнур Курмандаев](https://up.htmlacademy.ru/nodejs-api/5/user/1552615).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Сушко](https://htmlacademy.ru/profile/sashasushko).
 
 ---
 
