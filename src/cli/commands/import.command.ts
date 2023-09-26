@@ -13,7 +13,7 @@ export class ImportCommand implements Command {
 
     try {
       fileReader.read();
-      console.log(chalk.green(fileReader.toArray()));
+      console.log(fileReader.toArray());
     } catch (err) {
 
       if (!(err instanceof Error)) {

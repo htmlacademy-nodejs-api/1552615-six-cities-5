@@ -6,7 +6,7 @@ function bootstrap() {
   cliApplication.registerCommands([
     new HelpCommand(),
     new VersionCommand(),
-    new ImportCommand(),
+    new ImportCommand()
   ]);
 
   cliApplication.processCommand(process.argv);
