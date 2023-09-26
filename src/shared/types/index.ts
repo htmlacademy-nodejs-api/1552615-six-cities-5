@@ -4,4 +4,3 @@ export * from './user.type.js';
 export * from './city.enum.js';
 export * from './convenience-type.enum.js';
 export * from './housing-type.enum.js';
-export * from './user-type.enum.js';
