@@ -27,11 +27,6 @@ export class ImportCommand implements Command {
     try {
       await fileReader.read();
     } catch (error) {
-
-      if (!(error instanceof Error)) {
-        throw error;
-      }
-
       console.error(chalk.red(`Can't import data from file: ${filename}`));
       console.error(chalk.red(getErrorMessage(error)));
     }
