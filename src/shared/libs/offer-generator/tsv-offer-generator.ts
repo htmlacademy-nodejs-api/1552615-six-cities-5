@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { OfferGenerator } from './offer-generator.interface.js';
-import { City, MockServerData} from '../../types/index.js';
+import { City, MockServerData } from '../../types/index.js';
 import { generateRandomValue, getRandomItem} from '../../helpers/index.js';
 
 const MIN_PRICE = 100;
@@ -17,6 +17,9 @@ const MAX_ROOMS_COUNT = 8;
 
 const FIRST_WEEK_DAY = 1;
 const LAST_WEEK_DAY = 7;
+
+const MIN_COMMENTS_COUNT = 1;
+const MAX_COMMENTS_COUNT = 100;
 
 const LOCATIONS = {
   'Paris': { 'latitude': 48.85661, 'longitude': 2.351499 },
@@ -35,7 +38,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const description = getRandomItem<string>(this.mockData.descriptions);
     const city = getRandomItem<string>(this.mockData.cities) as keyof typeof City;
     const preview = getRandomItem<string>(this.mockData.previews);
-    const photos = getRandomItem<string>(this.mockData.photos[generateRandomValue(0, this.mockData.photos.length - 1)]);
+    const photos = getRandomItem<string[]>(this.mockData.photos).join(';');
     const type = getRandomItem<string>(this.mockData.types);
     const convenience = getRandomItem<string>(this.mockData.convieniences);
     const authorName = getRandomItem<string>(this.mockData.names);
@@ -57,7 +60,8 @@ export class TSVOfferGenerator implements OfferGenerator {
     const roomsCount = generateRandomValue(MIN_ROOMS_COUNT, MAX_ROOMS_COUNT).toString();
     const guestsCount = generateRandomValue(MIN_GUESTS_COUNT, MAX_GUESTS_COUNT).toString();
     const price = generateRandomValue(MIN_PRICE, MAX_PRICE).toString();
-    return [title, description, publishedDate, city, preview, photos, premium, favorite, rating, type, roomsCount, guestsCount, price, convenience, authorName, email, avatar, password, proType, location].join('\t');
+    const commentsCount = generateRandomValue(MIN_COMMENTS_COUNT, MAX_COMMENTS_COUNT).toString();
+    return [title, description, publishedDate, city, preview, photos, premium, favorite, rating, type, roomsCount, guestsCount, price, convenience, authorName, email, avatar, password, proType, commentsCount, location].join('\t');
   }
 
 }
