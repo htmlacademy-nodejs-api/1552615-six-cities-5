@@ -1,0 +1,104 @@
+{
+  "api": {
+    "titles": [
+      "Замечательная берлога для настоящих медведей",
+      "Восхитительный А-frame дом",
+      "Светлые и теплые апартаменты для молодой пары",
+      "Темная и холодная квартира-студия для старого одиночки",
+      "Небольшая комната для худых низких людей (ростом ниже 160см)",
+      "Ухоженное стойбище для молодых кобыл",
+      "Винтажный особняк в викторианском стиле"
+    ],
+    "descriptions": [
+      "Теплая, чистая, светлая квартира. Включены завтраки, wi-fi, уборка два раза в неделю",
+      "Большой особняк с привидениями. Приведения очень дружелюбные. В случае нападения вначале извинятся, уведомят о предстоящем нападении. С детьми лучше не заезжать. Не гарантирууем вашу безопасность",
+      "Новый, недавно построенный A-frame дом в живописном месте. Отлично подходит для романтических вечеров, фотосессий, проведения различного рода мероприятий",
+      "Брутальный лофт для настоящих холостяков. Есть большой холодильник под пиво и всякого рода закусон. Имеется 80 дюймовый OLED телек с пятой плойкой и набором кайфовых игрух.",
+      "Очень небольшая комната. Низкий потолок на высоте 170 см. Спать придется стоя. Туалет отсутствует, поэтому подгузники - must have."
+    ],
+    "cities": [
+      "Paris",
+      "Cologne",
+      "Brussels",
+      "Amsterdam",
+      "Hamburg",
+      "Dusseldorf"
+    ],
+    "previews": [
+      "beerloga-prev.jpg",
+      "castle-prev.jpg",
+      "capsule.jpg",
+      "a-house.jpg",
+      "horse-house.jpg"
+    ],
+    "photos": [
+      [
+        "beerloga01.jpg",
+        "beerloga02.jpg",
+        "beerloga03.jpg"
+      ],
+      [
+        "castle01.jpg",
+        "castle02.jpg",
+        "castle03.jpg",
+        "castle10.jpg",
+        "castle06.jpg",
+        "castle08.jpg"
+      ],
+      [
+        "capsule-1.jpg",
+        "capsule-2.jpg",
+        "capsule-3.jpg"
+      ],
+      [
+        "horse-house.jpg"
+      ],
+      [
+        "a-house_1.jpg",
+        "a-house_2.jpg"
+      ]
+    ],
+    "types": [
+      "apartment",
+      "house",
+      "room",
+      "hotel"
+    ],
+    "convieniences": [
+      "Breakfast",
+      "AirConditioning",
+      "LaptopFriendlyWorkspace",
+      "BabySeat",
+      "Washer",
+      "Towels",
+      "Fridge"
+    ],
+    "names": [
+      "Duke Drakula",
+      "Hannibal Lector",
+      "Freddy Kruger",
+      "JSON Voorhees",
+      "Mike Myers"
+    ],
+    "emails": [
+      "bloody-duke@gmail.com",
+      "tastyBrains@mail.ru",
+      "sleep4ever@rambler.ru",
+      "macheteLover@yandex.ru",
+      "maskWear@gmail.ru"
+    ],
+    "passwords": [
+      "DukeDrakula",
+      "HannibalLector",
+      "FreddyKruger",
+      "JSONVoorhees",
+      "MikeMyers"
+    ],
+    "avatars": [
+      "teethy.jpg",
+      "tasty_dish.jpg",
+      "maskFace.png",
+      "nothingToSay.png"
+    ]
+  }
+}
