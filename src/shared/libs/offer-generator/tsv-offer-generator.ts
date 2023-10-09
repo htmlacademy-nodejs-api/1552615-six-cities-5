@@ -44,7 +44,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const authorName = getRandomItem<string>(this.mockData.names);
     const email = getRandomItem<string>(this.mockData.emails);
     const password = getRandomItem<string>(this.mockData.passwords);
-    const avatar = getRandomItem<string>(this.mockData.avatars);
+    const avatarPath = getRandomItem<string>(this.mockData.avatars);
 
     const location = `${LOCATIONS[city].latitude};${LOCATIONS[city].longitude}`;
 
@@ -52,16 +52,16 @@ export class TSVOfferGenerator implements OfferGenerator {
       .subtract(generateRandomValue(FIRST_WEEK_DAY, LAST_WEEK_DAY), 'day')
       .toISOString();
 
-    const premium = getRandomItem(['true', 'false']);
-    const favorite = getRandomItem(['true', 'false']);
-    const proType = getRandomItem(['true', 'false']);
+    const isPremium = getRandomItem(['true', 'false']);
+    const isFavorite = getRandomItem(['true', 'false']);
+    const isProType = getRandomItem(['true', 'false']);
 
     const rating = generateRandomValue(MIN_RATING_VALUE, MAX_RATING_VALUE, 1).toString();
     const roomsCount = generateRandomValue(MIN_ROOMS_COUNT, MAX_ROOMS_COUNT).toString();
     const guestsCount = generateRandomValue(MIN_GUESTS_COUNT, MAX_GUESTS_COUNT).toString();
     const price = generateRandomValue(MIN_PRICE, MAX_PRICE).toString();
     const commentsCount = generateRandomValue(MIN_COMMENTS_COUNT, MAX_COMMENTS_COUNT).toString();
-    return [title, description, publishedDate, city, preview, photos, premium, favorite, rating, type, roomsCount, guestsCount, price, convenience, authorName, email, avatar, password, proType, commentsCount, location].join('\t');
+    return [title, description, publishedDate, city, preview, photos, isPremium, isFavorite, rating, type, roomsCount, guestsCount, price, convenience, authorName, email, avatarPath, password, isProType, commentsCount, location].join('\t');
   }
 
 }
