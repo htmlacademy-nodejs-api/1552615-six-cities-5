@@ -49,7 +49,7 @@ export class OfferEntity extends defaultClasses.TimeStamps {
   public price!: number;
 
   @prop({required: true, enum: ConvenienceType})
-  public convenience!: ConvenienceType[];
+  public convenience!: ConvenienceType;
 
   @prop({ref: UserEntity, required: true})
   public userId!: Ref<UserEntity>;

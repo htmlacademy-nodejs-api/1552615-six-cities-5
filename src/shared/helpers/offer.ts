@@ -18,7 +18,7 @@ export function createOffer(offerData: string): Offer {
     guestsCount: Number.parseInt(guestsCount, 10),
     price: Number.parseInt(price, 10),
     convenience: ConvenienceType[convenience as 'Breakfast' | 'AirConditioning' | 'LaptopFriendlyWorkspace' | 'BabySeat' | 'Washer' | 'Towels' | 'Fridge'],
-    author: {
+    user: {
       name,
       email,
       avatarPath,

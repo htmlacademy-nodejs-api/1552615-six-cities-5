@@ -14,7 +14,7 @@ export class CreateOfferDto {
   public roomsCount: number;
   public guestsCount: number;
   public price: number;
-  public convenience: ConvenienceType[];
+  public convenience: ConvenienceType;
   public userId: string;
   public location: {
     latitude: number,
