@@ -55,9 +55,6 @@ export class OfferEntity extends defaultClasses.TimeStamps {
   public userId!: Ref<UserEntity>;
 
   @prop({required: true})
-  public commentsCount!: number;
-
-  @prop({required: true})
   public location!: {
     latitude: number,
     longitude: number

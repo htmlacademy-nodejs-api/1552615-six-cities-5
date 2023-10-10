@@ -1,7 +1,7 @@
 import { Offer, City, HousingType, ConvenienceType } from '../types/index.js';
 
 export function createOffer(offerData: string): Offer {
-  const [title, description, publishedDate, city, preview, photos, isPremium, isFavorite, rating, type, roomsCount, guestsCount, price, convenience, name, email, avatarPath, isProType, commentsCount, location] = offerData.replace('\n', '').split('\t');
+  const [title, description, publishedDate, city, preview, photos, isPremium, isFavorite, rating, type, roomsCount, guestsCount, price, convenience, name, email, avatarPath, isProType, location] = offerData.replace('\n', '').split('\t');
 
   return {
     title,
@@ -24,7 +24,6 @@ export function createOffer(offerData: string): Offer {
       avatarPath,
       isProType: isProType === 'true',
     },
-    commentsCount: Number.parseInt(commentsCount, 10),
     location: {
       latitude: Number.parseFloat(location.split(';')[0]),
       longitude: Number.parseFloat(location.split(';')[1])

@@ -19,7 +19,6 @@ export type Offer = {
   price: number;
   convenience: ConvenienceType;
   user: User;
-  commentsCount: number;
   location: {
     latitude: number,
     longitude: number
