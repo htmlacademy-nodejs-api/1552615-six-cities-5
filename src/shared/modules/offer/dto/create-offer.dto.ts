@@ -16,7 +16,6 @@ export class CreateOfferDto {
   public price: number;
   public convenience: ConvenienceType[];
   public userId: string;
-  public commentsCount: number;
   public location: {
     latitude: number,
     longitude: number
