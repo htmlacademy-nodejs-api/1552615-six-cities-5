@@ -10,16 +10,15 @@ export type Offer = {
   city: City;
   preview: string;
   photos: string[];
-  premium: boolean;
-  favorite: boolean;
+  isPremium: boolean;
+  isFavorite: boolean;
   rating: number;
   type: HousingType;
   roomsCount: number;
   guestsCount: number;
   price: number;
   convenience: ConvenienceType;
-  author: User;
-  commentsCount: number;
+  user: User;
   location: {
     latitude: number,
     longitude: number
